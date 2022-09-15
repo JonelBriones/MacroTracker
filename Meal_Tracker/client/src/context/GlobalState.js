@@ -5,14 +5,14 @@ const initialState = {
   meals: [
     {
       id: 1,
-      mealName: 'Breakfast',
+      mealName: 'Meal Example',
       carbs: 100,
       proteins: 20,
       fats: 10,
     },
-    { id: 2, mealName: 'Lunch', carbs: 100, proteins: 20, fats: 10 },
-    { id: 3, mealName: 'Dinner', carbs: 100, proteins: 20, fats: 10 },
-    { id: 4, mealName: 'Snack', carbs: 100, proteins: 20, fats: 10 },
+    // { id: 2, mealName: 'Lunch', carbs: 100, proteins: 20, fats: 10 },
+    // { id: 3, mealName: 'Dinner', carbs: 100, proteins: 20, fats: 10 },
+    // { id: 4, mealName: 'Snack', carbs: 100, proteins: 20, fats: 10 },
   ],
 }
 

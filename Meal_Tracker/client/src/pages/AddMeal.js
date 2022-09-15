@@ -73,7 +73,11 @@ export const AddMeal = () => {
           </div>
         </div>
         <button
-          className="btn"
+          className={
+            carbs === '' || fats === '' || proteins === ''
+              ? 'btn disable'
+              : 'btn'
+          }
           disabled={carbs === '' || fats === '' || proteins === ''}>
           {carbs === '' || fats === '' || proteins === ''
             ? 'Macros cannot be empty'

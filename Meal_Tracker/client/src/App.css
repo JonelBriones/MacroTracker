@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  cursor: default;
 }
 body {
   display: flex;
@@ -10,8 +14,9 @@ body {
   /* height: 100vh; */
   width: 100%;
   /* text-align: center; */
-  background-color: aquamarine;
+  background-color: #fefae0;
   margin-top: 4rem;
+  color: #283618;
 }
 .container {
   /* background-color: white; */
@@ -20,7 +25,7 @@ body {
   width: 100%;
   justify-content: center;
   min-width: 300px;
-  box-shadow: 0px 2px 7px 2px rgb(0, 0, 0);
+  box-shadow: 0px 2px 7px 2px rgba(188, 108, 37, 0.6);
   padding: 1rem;
 }
 .container__tracker,
@@ -38,7 +43,9 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 2rem;
-  box-shadow: 0px 2px 2px 2px rgb(166, 166, 166);
+  box-shadow: 0px 2px 3px 1px rgba(188, 108, 37, 1);
+  background-color: #dda15e;
+  border-radius: 4px;
   /* width: 100%; */
 }
 .form__container div label {
@@ -54,24 +61,37 @@ body {
   text-align: left;
   padding-left: 1rem;
   border: none;
-  box-shadow: 0px 2px 2px 2px rgb(166, 166, 166);
+  /* background-color: #bc6c25; */
   cursor: pointer;
   font-size: 0.7rem;
+  border-radius: 4px;
 }
 .form__container div input:focus {
   outline: none;
-  box-shadow: 0px 2px 2px 2px rgb(152, 152, 152);
 }
 .btn {
   cursor: pointer;
   background-color: rgb(0, 255, 47);
+  border: none;
 
   width: 100%;
   height: 2rem;
 }
+.btn {
+  margin-block: 0.5rem;
+  cursor: pointer;
+  background-color: #fefae0;
+  box-shadow: 0px 2px 3px 1px rgba(96, 108, 56, 0.4);
+  width: 100%;
+  height: 2rem;
+}
+.btn.disable {
+  color: #606c38;
+  cursor: not-allowed;
+}
 /* V2 MEAL LIST */
-.list {
-  /* border: 2px solid red; */
+.list__header {
+  margin-top: 1rem;
 }
 .meal__summmary-container {
   margin-block: 1rem;
@@ -107,6 +127,7 @@ body {
 .delete-btn span {
   opacity: 0;
   transition: opacity 200ms ease;
+  cursor: pointer;
 }
 .meal__summmary:hover .delete-btn span {
   opacity: 1;
@@ -130,9 +151,11 @@ body {
 }
 .intake__slider {
   width: 80%;
+  cursor: pointer;
 }
 .intake__number {
   width: 20%;
+  cursor: auto;
 }
 .total-calories.active {
   color: red;

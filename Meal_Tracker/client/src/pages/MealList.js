@@ -5,7 +5,7 @@ export const MealList = () => {
   const toggle = () => {}
   return (
     <>
-      <h3>Meals Added</h3>
+      <h3 className="list__header">Meals Added</h3>
       {/* <ul className="list">
         {meals.map((meal) => (
           <li className="meals" key={meal.id}>
