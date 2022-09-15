@@ -29,7 +29,19 @@ export const Macros = () => {
         </span>
       </h3>
       <h3>Goal Intake: {intake}</h3>
-      <h4>Remaining: {intake - totalCalories}</h4>
+      <h4>
+        Remaining:{' '}
+        <span
+          className={
+            intake > 999
+              ? totalCalories > intake
+                ? 'total-calories active'
+                : null
+              : null
+          }>
+          {intake - totalCalories}
+        </span>
+      </h4>
     </>
   )
 }
